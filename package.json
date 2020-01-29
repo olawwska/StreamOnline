@@ -1,0 +1,23 @@
+{
+  "name": "streamonline",
+  "version": "1.0.0",
+  "description": "streamonline project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olawwska"
+  },
+  "keywords": [
+    "time",
+    "counter"
+  ],
+  "author": "Aleksandra Wojciechowska",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
