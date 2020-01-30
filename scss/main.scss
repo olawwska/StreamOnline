@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'inconsolatamedium';
+    src: url('inconsolata-webfont.woff2') format('woff2'),
+        url('inconsolata-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'inconsolatamedium';
+}
+
+.container {
+    margin: 200px 290px 0 290px;
+}
+
+nav {
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    &__button {
+        width: 25px;
+        height: 25px;
+        border: 2px solid black;
+
+        &_red {
+            background-color: red;
+        }
+
+        &_green {
+            background-color: greenyellow;
+        }
+
+        &_blue {
+            background-color: blue;
+        }
+    }
+}
+
+.lang {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    &__button {
+        width: 20px;
+        height: 20px;
+        border: none;
+        font-size: 24px;
+
+        &_disabled {
+            color: gray;
+        }
+
+    }
+}
+
+.section-main {
+    width: 500px;
+    margin: 5% 30% 0 20%;
+
+}
+
+.section-date {
+    width: 100%;
+
+    &__button {
+        width: 50px;
+        height: 50px;
+        margin: 0 5px 0 5px;
+        background-color: rgb(203, 203, 203);
+        font-size: 24px;
+    }
+
+    &__input {
+        width: 426px;
+        height: 50px;
+        border: 2px solid black;
+    }
+}
+
+.section-counter {
+    width: 100%;
+    height: 138px;
+    border: 2px dashed black;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0 3rem 0;
+    box-sizing: border-box;
+    padding: 12px 0 0 12px;
+
+    >div {
+        width: 5rem;
+        height: 5rem;
+        border: 2px solid black;
+        position: relative;
+
+    }
+
+    >div>span {
+        position: absolute;
+        bottom: -20px;
+        left: 36%;
+
+    }
+
+    &__button {
+        width: 2rem;
+        height: 2rem;
+        background-color: red;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+.section-summary {
+    width: 100%;
+    height: 138px;
+    border: 1px solid black;
+    background-color: rgb(236, 236, 236);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    &__test {
+        align-self: center;
+    }
+
+    &__button {
+        background-color: rgb(203, 203, 203);
+        width: 7rem;
+        height: 2rem;
+        font-family: 'inconsolatamedium';
+        font-size: 24px;
+    }
+}
