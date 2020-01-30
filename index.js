@@ -75,4 +75,10 @@ window.addEventListener("DOMContentLoaded", event => {
       renderTimer();
       currentTime();
     });
+
+  document
+    .querySelector(".section-counter__button")
+    .addEventListener("click", function() {
+      this.parentElement.remove();
+    });
 });
