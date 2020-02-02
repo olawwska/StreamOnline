@@ -48,7 +48,8 @@ nav {
   margin: 5% 30% 0 20%; }
 
 .section-date {
-  width: 100%; }
+  width: 100%;
+  margin: 5% 30% 0 20%; }
   .section-date__button {
     width: 50px;
     height: 50px;
@@ -73,7 +74,12 @@ nav {
     width: 5rem;
     height: 5rem;
     border: 2px solid black;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding-top: 11px;
+    margin-bottom: 30px;
+    text-align: center; }
   .section-counter > div > span {
     position: absolute;
     bottom: -20px;

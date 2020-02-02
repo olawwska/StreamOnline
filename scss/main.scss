@@ -72,6 +72,7 @@ nav {
 
 .section-date {
     width: 100%;
+    margin: 5% 30% 0 20%;
 
     &__button {
         width: 50px;
@@ -103,6 +104,10 @@ nav {
         height: 5rem;
         border: 2px solid black;
         position: relative;
+        box-sizing: border-box;
+        font-size: 18px;
+        padding-top: 11px;
+        text-align: center;
 
     }
 
