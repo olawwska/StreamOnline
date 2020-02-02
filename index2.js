@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   let dataFromLocalStorage = [];
-  let inputDates = [];
+
   document
     .querySelector(".section-date__button")
-    .addEventListener("click", () => {
+    .addEventListener("click", function () {
       //renderTimer();
       let sectionMain = document.querySelector(".section-main");
       sectionMain.innerHTML += `<div class="section-counter">
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>`;
 
       // currentTime();
-      let inputDate = document.querySelector(".section-date__input").value;
-      inputDates.push(inputDate);
+      let inputDate = this.nextElementSibling.value;
+      console.log(inputDate + " input date");
 
       let dateObject = {
         day: 0,
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (localStorage.getItem("dates") != null) {
           dataFromLocalStorage = JSON.parse(localStorage.getItem("dates"));
         }
-        dataFromLocalStorage.shift();
+        dataFromLocalStorage.pop();
         dataFromLocalStorage.push(dateObject);
         localStorage.setItem("dates", JSON.stringify(dataFromLocalStorage));
 
@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dataFromLocalStorage = JSON.parse(localStorage.getItem("dates"));
         let test = Object.values(dataFromLocalStorage[0]);
+        console.log(dataFromLocalStorage)
 
         let timerValues = [
           ...document.querySelectorAll(".section-counter>div>p")
