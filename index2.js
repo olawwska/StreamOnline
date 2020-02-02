@@ -51,14 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (localStorage.getItem("dates") != null) {
           dataFromLocalStorage = JSON.parse(localStorage.getItem("dates"));
-          dataFromLocalStorage.shift();
-          dataFromLocalStorage.push(dateObject);
-          localStorage.setItem("dates", JSON.stringify(dataFromLocalStorage));
-        } else {
-          dataFromLocalStorage.shift();
-          dataFromLocalStorage.push(dateObject);
-          localStorage.setItem("dates", JSON.stringify(dataFromLocalStorage));
         }
+        dataFromLocalStorage.shift();
+        dataFromLocalStorage.push(dateObject);
+        localStorage.setItem("dates", JSON.stringify(dataFromLocalStorage));
 
         //insertDate();
 
