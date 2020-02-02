@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let dataFromLocalStorage = [];
   let inputDates = [];
   document
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             days * 86400000 -
             hours * 3600000 -
             minutes * 60000) /
-            1000
+          1000
         );
 
         dateObject.day = days;
